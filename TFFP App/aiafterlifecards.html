@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://aiafterlife.glitch.me/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Thing From the Future's Past</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon and app icon -->
+    <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/822c2d86-7acf-4102-bd39-a4a7fec0e423%2Ffavicon-01.png?v=1579186189983">
+
+    <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="https://cdn.glitch.com/822c2d86-7acf-4102-bd39-a4a7fec0e423%2Fappicon-01.png?v=1579186190277">
+
+    <!-- eb garamond as typeface, using bold and regular -->
+    <link href="./TFFP_files/css" rel="stylesheet">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./TFFP_files/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="./TFFP_files/script.js" defer=""></script>
+  <link rel="stylesheet" href="./TFFP_files/button.css"></head>
+  <body data-new-gr-c-s-check-loaded="14.1176.0" data-gr-ext-installed="">
+    <header>
+      <!--       <nav>
+        <ul class="menu">
+          <li onclick="showoverlay()">← Instructions</li>
+        </ul>
+      </nav> -->
+    </header>
+    <section>
+      <h1 id="title">Thing from the Future's Past</h1>
+<!--       <h2 id="subtitle">AI + the Afterlife</h2> -->
+    </section>
+    <main>
+      <section class="thecards">
+        <!-- All the backgrounds have the class cardback -->
+        <!-- All the actual cards have the class prompt -->
+
+        <article class="cardback" onclick="showarc()" id="arccover">
+          <img src="./TFFP_files/background-glitch.png" alt="" width="200">
+        </article>
+
+        <article class="prompt" id="arccard" onclick="fliparc()">
+
+          <h2>Timeline</h2>
+          
+          <h1 id="arc">
+            <!-- Arc will come here -->
+          </h1>
+          
+
+          <h3 id="arcsubtext">
+            <em>How far from today</em>
+          </h3>
+        </article>
+
+        <article class="cardback" onclick="showterrain()" id="terraincover">
+          <img src="./TFFP_files/background-glitch.png" alt="" width="200">
+        </article>
+
+        <article class="prompt" id="terraincard" onclick="flipterrain()">
+          <h2>Context</h2>
+          <h1 id="terrain">
+            <!-- Terrain will come here -->
+          </h1>
+          <h3>
+            <em>The focus area of the design</em>
+          </h3>
+        </article>
+
+        <article class="cardback" onclick="showobject()" id="objectcover">
+          <img src="./TFFP_files/background-glitch.png" alt="" width="200">
+        </article>
+
+        <article class="prompt" id="objectcard" onclick="flipobject()">
+          <h2>Invention</h2>
+          <h1 id="object">
+            <!-- Object will come here -->
+          </h1>
+          <h3>
+            <em>What type of thing to design</em>
+          </h3>
+        </article>
+
+        <article class="cardback" onclick="showmodality()" id="modalitycover">
+          <img src="./TFFP_files/background-glitch.png" alt="" width="200">
+        </article>
+
+        <article class="prompt" id="modalitycard" onclick="flipmodality()">
+          <h2>AI Modality</h2>
+          <h1 id="modality">
+            <!-- Modality will come here -->
+          </h1>
+          <h3>
+            <em>The AI output the thing makes use of</em>
+          </h3>
+        </article>
+
+        <article class="cardback" onclick="showmood()" id="moodcover">
+          <img src="./TFFP_files/background-glitch.png" alt="" width="200">
+        </article>
+
+        <article class="prompt" id="moodcard" onclick="flipmood()">
+          <h2>Outcome</h2>
+          <h1 id="mood">
+            <!-- Mood will come here -->
+          </h1>
+          <h3>
+            <em>The impact the design will have</em>
+          </h3>
+        </article>
+      </section>
+      <section>
+        <h5>
+          A remix of a game by Stuart Candy and Jeff Watson <br>
+          2015
+          <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">CC-BY-NC-SA</a>
+          |
+          <a href="http://situationlab.org/project/the-thing-from-the-future/" target="_blank">situationlab.org</a>
+          | <a href="https://twitter.com/sitlab" target="_blank">@sitlab</a>
+          <br>
+          Forked from code written by
+          <a href="http://www.paritoshursekar.com/" target="_blank">Paritosh Ursekar</a>
+        </h5>
+      </section>
+    </main>
+
+    <div id="overlay">
+      <div class="closeoverlay" style="position: fixed; top: 20px; left: 20px">
+        <img src="./TFFP_files/ea18bd20-ffc0-4ab9-9b63-9fc7547b97a7_closeoverlay.svg" alt="close overlay" onclick="hideoverlay()" style="cursor: pointer">
+      </div>
+      <!-- include the Glitch button to show what the webpage is about and to make it easier for folks to view source and remix -->
+      <div class="glitchButton" style="position: fixed; top: 20px; right: 20px"><button class="glitchButtonElement"><img alt="This is a Glitch app!" width="50px" src="./TFFP_files/1973df30-22e4-49d9-94b0-9a3b017066bc_GlitchLogo_Color.svg"></button><div class="glitchOpenWindowElement" style="display: none;"><div class="project">
+          <div class="projectInfo">
+            <div class="name"><a href="https://glitch.com/~aiafterlife?utm_source=button&amp;utm_medium=button&amp;utm_campaign=glitchButton&amp;utm_content=aiafterlife">aiafterlife</a></div>
+            <p class="description">A digital version of the "Thing from the Future" remixed with cards for AI+TheAfterlife workshops.</p>
+            <div class="users">
+              <ul><li><a href="https://glitch.com/@whatknows?utm_source=button&amp;utm_medium=button&amp;utm_campaign=glitchButton&amp;utm_contnet=aiafterlife"><img width="25px" src="./TFFP_files/a68533fb-d4a1-4b80-b28b-586b4eeb7a34-small.png" alt="avatar of whatknows"> <span class="name">whatknows</span></a></li></ul>
+            </div>
+          </div>
+          <div class="projectActions"><a class="buttonLinks remix" href="https://glitch.com/edit?utm_source=button&amp;utm_medium=button&amp;utm_campaign=glitchButton&amp;utm_content=aiafterlife/#!/remix/aiafterlife">Remix on Glitch</a><br> <a class="buttonLinks viewCode" href="https://glitch.com/edit?utm_source=button&amp;utm_medium=button&amp;utm_campaign=glitchButton&amp;utm_content=aiafterlife/#!/aiafterlife">View Source</a><br> <button class="buttonLinks embed">Embed This App</button></div>
+          <div class="projectEmbed"><div class="embedGlitchCode"><label>Copy and paste this code anywhere you want to embed this app.<textarea>&lt;div class="glitch-embed-wrap" style="height: 486px; width: 100%;"&gt;
+  &lt;iframe
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/aiafterlife?previewSize=100&amp;previewFirst=true&amp;sidebarCollapsed=true"
+    alt="aiafterlife on Glitch"
+    style="height: 100%; width: 100%; border: 0;"&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</textarea><a class="buttonLinks viewCode" href="https://glitch.com/edit?utm_source=button&amp;utm_medium=button&amp;utm_campaign=glitchButton&amp;utm_content=aiafterlife/#!/aiafterlife">View Source</a> to customize the embed under the "Share" menu.</label></div></div>
+        </div> <span class="tooltip border"></span><span class="tooltip fill"></span></div></div>
+      <script src="./TFFP_files/button.js"></script>
+      <div class="overlaycontent">
+        <h1>The Thing from the Future (Digital Edition)</h1>
+        <p>
+          The Thing from the Future is an award winning imagination game that
+          challenges players to describe objects from a range of alternative
+          futures. <br>
+          Originally created by
+          <a href="http://situationlab.org/" target="_blank">Situation Labs</a>,
+          this is an unauthorised digital recreation of the game’s
+          <a href="http://situationlab.org/futurething-print-and-play-edition/" target="_blank">Print-And-Play Edition</a>. Enjoy playing! Do share your favourite ideas on social media using
+          the <strong>#FutureThing</strong> hashtag.
+        </p>
+        <br>
+        <h3>How to Play</h3>
+        <p>
+          The object of the game is to come up with the most entertaining and
+          thought-provoking descriptions of hypothetical objects from different
+          near-, medium-, and long-term futures. This game is best played with a
+          group of 2-6 players. Each round, click to turn each of the 4 cards to
+          generate a creative prompt. Players then write a short description
+          (and sketch, if they wish!) of an object that fits the constraints of
+          the prompt. Once ready, read out and share your descriptions. You are
+          now free to collaborate on fleshing out the most interesting ideas as
+          a group.
+        </p>
+        <br>
+        <h3>Key Card</h3>
+        <ol>
+          <li>
+            <h3>Ⓐ Arc</h3>
+            ARC outlines the type of future world that the “thing” comes from,
+            and how far away it is from today. There are four types of Arc, each
+            an umbrella for countless possible scenarios:
+            <ul>
+              <li>
+                <strong>Growth</strong>: A future in which ‘progress’ has
+                continued
+              </li>
+              <li>
+                <strong>Collapse</strong>: A future in which society as we know
+                it has come apart
+              </li>
+              <li>
+                <strong>Discipline</strong>: A future in which order is
+                deliberately coordinated or imposed
+              </li>
+              <li>
+                <strong>Transform</strong>: A future in which a profound
+                historical evolution has occurred
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Ⓣ Terrain</h3>
+            TERRAIN is the thematic context or location where this object could
+            be found in that future.
+          </li>
+          <li>
+            <h3>Ⓞ Object</h3>
+            OBJECT is the focus for your imagination: a specific cultural
+            artifact that reveals something about how this future is different
+            from today.
+          </li>
+          <li>
+            <h3>Ⓜ Mood</h3>
+            MOOD suggests how it might feel to experience this thing from the
+            future.
+          </li>
+        </ol>
+        <br>
+        <hr>
+        <br>
+        <p>
+          This project was lovingly hand-coded by
+          <a href="http://www.paritoshursekar.com/" target="_blank">Paritosh Ursekar </a>- a Sydney, Australia based user experience and interface designer.
+          It is released under a
+          <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">Creative Commons Attribution-NonCommercial-Sharealike 2.0
+            license</a>, just like the
+          <a href="http://situationlab.org/futurething-print-and-play-edition/" target="_blank">original game</a>. <br>
+        </p>
+        <p>
+          You can see more of my work at
+          <a href="http://www.paritoshursekar.com/" target="_blank">www.paritoshursekar.com</a>. If you wish to speak with me: reach out on
+          <a href="https://twitter.com/plastictosh" target="_blank">Twitter</a>,
+          <a href="https://www.linkedin.com/in/paritosh-ursekar-60167b95/" target="_blank">LinkedIn</a>, or via
+          <a href="mailto:paritosh@bycodesign.com.au" target="_blank">email</a>.
+          :)
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+      </div>
+    </div>
+  
+
+<scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"><div></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed bottom-auto right-0 top-0 z-[10000000] flex max-h-screen min-w-[300px] max-w-[360px] p-4"></ol></div></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
