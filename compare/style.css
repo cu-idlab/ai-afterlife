@@ -1,0 +1,197 @@
+/* CSS files add styling rules to your content */
+
+html,
+body {
+  background: #ffffff;
+  font-family: "EB Garamond", Georgia, serif;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 98%;
+}
+
+.menu {
+  float: right;
+  list-style-type: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+main {
+  margin: auto;
+  padding: 20px;
+}
+
+.thecards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 50px;
+}
+
+.cardback {
+  display: inline;
+  flex: 1 200px;
+  height: 400px;
+  background-color: #111111;
+  padding: 0px;
+  padding-top: 35px;
+  margin: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cardback:hover {
+  box-shadow: 10px 15px 0px #edcbcb;
+  cursor: pointer;
+}
+
+.prompt {
+  display: none;
+  position: relative;
+  flex: 1 200px;
+  height: 400px;
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.prompt:hover {
+  box-shadow: 10px 15px 0px #edcbcb;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 25%;
+}
+h1 {
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  color: #222222;
+  /*   hyphens: auto; */
+}
+
+h5 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  color: #222222;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #222222;
+  margin: auto;
+  padding-bottom: 2em;
+}
+.prompt h3 {
+  position: absolute;
+  bottom: 10px;
+  /*   left: 0; */
+  width: 90%;
+}
+
+footer {
+  background-color: #222222;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+}
+
+p,
+li {
+  font-size: 20px;
+}
+
+.displayprompts {
+  font-family: "EB Garamond", serif;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #222222;
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  display: block;
+}
+
+.displayprompts:active {
+  color: #f1f1f1;
+  background-color: #222222;
+}
+
+.displayprompts:hover {
+  color: #f1f1f1;
+  background-color: #222222;
+}
+
+#overlay {
+  position: fixed;
+  overflow: scroll;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 2;
+}
+
+.overlaycontent {
+  max-width: 700px;
+  margin: auto;
+  padding-right: 50px;
+}
+
+.header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 98%;
+}
+
+/* article {
+  position: relative;
+} */
+
+#title {
+/*   text-align: left;
+  margin-left: 35px; */
+}
+
+#subtitle {
+  position: absolute; /* Position the subtitle absolutely */
+  top: 0; /* Align the subtitle to the top */
+  right: 0; /* Align the subtitle to the right */
+  padding-right: 35px;
+  margin-top: 40px;
+}

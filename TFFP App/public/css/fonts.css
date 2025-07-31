@@ -1,0 +1,11 @@
+/* Font fallbacks in case Google Fonts fails to load */
+@font-face {
+  font-family: 'EB Garamond Fallback';
+  src: local('Georgia'), local('Times New Roman'), local('serif');
+  font-display: swap;
+}
+
+/* Apply fallback font */
+html, body {
+  font-family: "EB Garamond", "EB Garamond Fallback", Georgia, serif;
+} 

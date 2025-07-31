@@ -17,20 +17,21 @@ To run this project locally:
 
 1. Clone this repository
 2. Navigate to the `TFFP App` folder
-3. Open `aiafterlifecards.html` in your web browser
+3. Open `index.html` in your web browser
 
 ## Project Structure
 
 ```
 TFFP App/
-├── aiafterlifecards.html    # Main HTML file
-└── TFFP_files/              # Assets folder
-    ├── style.css            # Main stylesheet
-    ├── script.js            # Main JavaScript
-    ├── button.css           # Button styles
-    ├── button.js            # Button functionality
-    ├── css                  # Additional styles
-    └── [images and SVGs]    # Visual assets
+├── index.html               # Main HTML file
+├── style.css                # Main stylesheet
+├── script.js                # Main JavaScript
+├── README.md                # Game instructions and documentation
+└── public/                  # Assets folder
+    ├── images/              # Image assets
+    ├── icons/               # SVG icons
+    ├── css/                 # Additional styles
+    └── js/                  # JavaScript files
 ```
 
 ## GitHub Pages Setup

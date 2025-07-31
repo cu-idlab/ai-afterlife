@@ -31,13 +31,22 @@ var aioptions = [
   "Virtual Reality"
 ]
 var terrainoptions = [
-  // Ours
+  // HCIC
   "A Good Death",
   "Dying",
   "Personal Legacy",
   "Family History",
   "Memorialization",
   "Cultural Heritage",
+  
+  
+  // // Ours
+  // "A Good Death",
+  // "Dying",
+  // "Personal Legacy",
+  // "Family History",
+  // "Memorialization",
+  // "Cultural Heritage",
   
   // Old, redacted
   // "Childhood",
