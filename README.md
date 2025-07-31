@@ -1,8 +1,42 @@
-# ai-afterlife-cards
-A Thing from the Future's Past -- A card game used in the AI + Afterlife workshops.
+# AI Afterlife - Thing From the Future's Past
 
-A series of workshops were conducted during 2024 exploring design futures at the intersection of Artificial Intelligence and the Afterlife.
+A web application that generates creative prompts for designing AI-powered artifacts from the future.
 
-The workshop made use of a game developed specifically for these workshops. The repository includes:
-* **Website** to let people draw cards from the deck. It was originally constructed on glitch.me, but it can be downloaded here and run locally on in a browser.
-* Other resources will be added here as they are developed.
+## About
+
+This project contains the "Thing From the Future's Past" (TFFP) web app, which creates randomized prompts for speculative design projects involving AI and the afterlife.
+
+## Live Demo
+
+The app is deployed on GitHub Pages and can be accessed at:
+[Your GitHub Pages URL will appear here after deployment]
+
+## Local Development
+
+To run this project locally:
+
+1. Clone this repository
+2. Navigate to the `TFFP App` folder
+3. Open `aiafterlifecards.html` in your web browser
+
+## Project Structure
+
+```
+TFFP App/
+├── aiafterlifecards.html    # Main HTML file
+└── TFFP_files/              # Assets folder
+    ├── style.css            # Main stylesheet
+    ├── script.js            # Main JavaScript
+    ├── button.css           # Button styles
+    ├── button.js            # Button functionality
+    ├── css                  # Additional styles
+    └── [images and SVGs]    # Visual assets
+```
+
+## GitHub Pages Setup
+
+This project is configured to deploy the `TFFP App` folder to GitHub Pages using GitHub Actions. The deployment workflow is located in `.github/workflows/deploy.yml`.
+
+## License
+
+[Add your license information here]
